@@ -1,0 +1,25 @@
+body {
+    background-image: url("https://images.alphacoders.com/592/592955.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.486);
+    background-blend-mode: overlay;
+}
+
+.button {
+    color: rgb(71, 17, 194);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #04AA6D;
+}
+
+p {
+    color:white; 
+}

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='style.css' rel='stylesheet'>
+    <link href="style_more.css" rel="stylesheet">
+    <title>More Pirates</title>
+
+    <nav id="navbar">
+        <a href="index.html" target="_blank">Home</a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="classic.html" target="_blank">Classic</a>
+        <a href="info.html" target="_blank">Info</a>
+        <a href="more.html" target="_blank">More </a>
+        <a href="NewCondition.html" target="_blank">New Condition</a>
+    </nav>
+
+
+
+</head>
+
+<body>
+
+
+    <div id="problem1" class="problem">
+        <p>As the previous conclution, the pirates with odd number and even number will have 1 coin for each
+            alternatively. </p>
+        <p>If the number of pirates becomes larger and lager, for example, 200, what should the "Pirate A" do?</p>
+    </div>
+
+    <div id="explanation1" class="explanation">
+        <p>If the number of pirates comes to 200</p>
+        <br>
+        <p>The pirates with even numbers will have 1 coin each (including the "Pirate A" himself!)</p>
+
+        <div id="200 Pirates">
+            <h3>
+                200 Pirates
+                <h4>
+                    Now we have Pirate <strong>NO. 200</strong>, Pirate<strong> NO. 199</strong>, Pirate<strong> NO.
+                        198</strong>, ..., Pirate<strong> NO. 2</strong> and Pirate <strong>NO. 1</strong>
+                    <br>
+                    <strong>NO. 200</strong> is now giving his plan.
+
+                </h4>
+            </h3>
+            <table>
+
+                <thead>
+                    <th>Order</th>
+                    <th>200</th>
+                    <th>199</th>
+                    <th>198</th>
+                    <th>...</th>
+                    <th>2</th>
+                    <th>1</th>
+                    <th>Total</th>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Coins</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>...</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>100</td>
+                    </tr>
+
+                    <tr>
+                        <td>Previous</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>...</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>100</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vote</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>No/Yes Alternatively</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>100</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <p>
+                Number of Pirates = 200
+
+                Votes needed = 100
+
+                Votes get = 100
+
+                <strong>Accepted!</strong>
+            </p>
+        </div>
+    </div>
+
+    <div id="problem2" class="problem">
+        <p>Then we can discuss about the problem of 201 pirates</p>
+
+
+    </div>
+    <div id="explanation2" class="explanation">
+        <p>"Pirate A" really want to save a coin for himself.<br>
+            Unfortunately, he should have the life to spend the money. <br>
+            201/2=100.5 -> 101<br>
+            Thus, has to give a coin to every pirates with odd number (100 pirates) except himself or he will be thrown
+            into sea!</p>
+        <br>
+        <p></p>
+
+        <div id="201 Pirates">
+            <h3>
+                201 Pirates
+                <h4>
+                    Now we have Pirate <strong>NO. 201</strong>, Pirate<strong> NO. 200</strong>, Pirate<strong> NO.
+                        199</strong>, ..., Pirate<strong> NO. 2</strong> and Pirate<strong> NO. 1</strong>
+                    <br>
+                    <strong>NO. 201</strong> is now giving his plan.
+
+                </h4>
+            </h3>
+            <table>
+
+                <thead>
+                    <th>Order</th>
+                    <th>201</th>
+                    <th>200</th>
+                    <th>199</th>
+                    <th>...</th>
+                    <th>2</th>
+                    <th>1</th>
+                    <th>Total</th>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Coins</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>...</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>100</td>
+                    </tr>
+
+                    <tr>
+                        <td>Previous</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>...</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>100</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vote</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>No/Yes Alternatively</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>101</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <p>
+                Number of Pirates = 201
+
+                Votes needed = 101
+
+                Votes get = 101
+
+                <strong>Accepted!</strong>
+            </p>
+        </div>
+
+    </div>
+
+
+    <div id="problem3" class="problem">
+        <p>202 Pirates </p>
+        <p></p>
+        <div id="202 Pirates">
+            <h3>
+                202 Pirates
+                <h4>
+                    Now we have Pirate <strong>NO. 202</strong>, Pirate<strong> NO. 201</strong>, Pirate<strong> NO.
+                        200</strong>, ..., Pirate<strong> NO. 2</strong> and Pirate <strong>NO. 1</strong>
+                    <br>
+                    <strong>NO. 202</strong> is now giving his plan.
+
+                </h4>
+            </h3>
+            <table>
+
+                <thead>
+                    <th>Order</th>
+                    <th>202</th>
+                    <th>201</th>
+                    <th>200</th>
+                    <th>...</th>
+                    <th>2</th>
+                    <th>1</th>
+                    <th>Total</th>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Coins</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>...</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>100</td>
+                    </tr>
+
+                    <tr>
+                        <td>Previous</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>...</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>100</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vote</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>No/Yes Alternatively</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>101</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <p>
+                Number of Pirates = 202
+
+                Votes needed = 101
+
+                Votes get = 101
+
+                <strong>Accepted!</strong>
+            </p>
+        </div>
+    </div>
+
+    <div id="explanation3" class="explanation">
+        <p>If the number of pirates comes to 202</p>
+        <br>
+        <p>The pirates with even numbers will have 1 coin each (exincluding the "Pirate A" himself)</p>
+    </div>
+
+    <div id="problem4" class="problem">
+        <p>203 Pirates </p>
+        <p></p>
+    </div>
+
+    <div id="explanation4" class="explanation">
+        <p>If the number of pirates comes to 203</p>
+        <br>
+        <p>He needs 102 votes to avoid being killed</p>
+        <br>
+        <p>However, he has only 100 coins which means he could only "gain" 100 votes to support him not being killed.
+        </p>
+        <br>
+        <p>Thus, no matter how his plan is, he will be thrown into the sea.
+    </div>
+
+    <div id="problem5" class="problem">
+        <p>Since there are only 100 gold coins, will all of the pirates which has at least 202 pirate behind him be
+            killed?</p>
+    </div>
+
+
+    <div id="explanation5" class="explanation">
+        <p>The answer is no. (or I will not ask this question)</p>
+        <br>
+        <p>Why?</p>
+        <br>
+        <p>We can simply consider the Pirate NO. 204</p>
+
+
+        <p>204 Pirates</p>
+
+        <div id="204 Pirates">
+            <h3>
+                204 Pirates
+                <h4>
+                    Now we have Pirate <strong>NO. 204</strong>, Pirate<strong> NO. 203</strong>, Pirate<strong> NO.
+                        202</strong>, ..., Pirate<strong> NO. 2</strong> and Pirate<strong> NO. 1</strong>
+                    <br>
+                    <strong>NO. 204</strong> is now giving his plan.
+                    <br>
+                    It is necessary to point out that since NO. 203 will die if NO. 204 dies, NO. 203 must support NO.
+                    204 to save their lifes.
+                    <br>
+                    Also, the other pirates will compare the plan between NO. 204 and NO. 202 because plan from NO. 203 will never
+                    be accepted.
+                </h4>
+            </h3>
+            <table>
+
+                <thead>
+                    <th>Order</th>
+                    <th>204</th>
+                    <th>203</th>
+                    <th>202</th>
+                    <th>201</th>
+                    <th>Last 200 Pirates</th>
+                    <th>Total</th>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Coins</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+
+                    <tr>
+                        <td>Previous</td>
+                        <td></td>
+                        <td>-1(Death)</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vote</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>100</td>
+                        <td>102</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <p>
+                Number of Pirates = 204
+
+                Votes needed = 102
+
+                Votes get = 102
+
+                <strong>Accepted!</strong>
+            </p>
+        </div>
+    </div>
+
+    <div id="problem6" class="problem">
+        <p>Now let's consider 205 pirates</p>
+    </div>
+
+
+    <div id="explanation6" class="explanation">
+
+        <p>205 Pirates</p>
+
+        <div id="205 Pirates">
+            <h3>
+                205 Pirates
+                <h4>
+                    Now we have Pirate <strong>NO. 205</strong>, Pirate<strong> NO. 204</strong>, Pirate<strong> NO.
+                        203</strong>, ..., Pirate<strong> NO. 2</strong> and Pirate<strong> NO. 1</strong>
+                    <br>
+                    <strong>NO. 205</strong> is now giving his plan.
+                  
+                </h4>
+            </h3>
+            <table>
+
+                <thead>
+                    <th>Order</th>
+                    <th>205</th>
+                    <th>204</th>
+                    <th>203</th>
+                    <th>202</th>
+                    <th>Last 200 Pirates</th>
+                    <th>Total</th>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Coins</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+
+                    <tr>
+                        <td>Previous</td>
+                        <td></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vote</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>100</td>
+                        <td>102</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <p>
+                Number of Pirates = 205
+
+                Votes needed = 103
+
+                Votes get = 101
+
+                <strong>Not Accepted!</strong>
+            </p>
+        </div>
+
+        <p> Unfortunately, the poor NO. 205 will be killed. </p>
+
+    </div>
+
+
+
+
+
+
+
+
+    
+
+
+</body>
+
+</html>

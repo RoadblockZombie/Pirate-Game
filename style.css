@@ -1,0 +1,63 @@
+  p {
+    color: rgba(227, 9, 52, 0.895);
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 48px;
+    padding: 10px 20px;
+  }
+
+  #Coins {
+
+    height: 300;
+    width: 200;
+
+  }
+
+  .hero {
+    background-color: deepskyblue;
+  }
+
+  #navbar {
+    background-color: #333;
+    color: #fff;
+    overflow: hidden;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  #navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+  }
+  
+  #content {
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+
+  th, td {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    width: 300px;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #D6EEEE;
+  }
+
+  th {
+    
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  

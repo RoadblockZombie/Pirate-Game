@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='style.css' rel='stylesheet'>
+    <link href="style_classic.css" rel="stylesheet">
+
+    <title>Classic</title>
+
+    <nav id="navbar">
+        <a href="index.html" target="_blank">Home</a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="classic.html" target="_blank">Classic</a>
+        <a href="info.html" target="_blank">Info</a>
+        <a href="more.html" target="_blank">More </a>
+        <a href="NewCondition.html" target="_blank">New Condition</a>
+    </nav>
+
+</head>
+
+<body>
+    
+    <h1>
+        Classic Problem
+    </h1>
+
+
+    <div class="Explanation">
+        <p>There are five rational pirates (in strict decreasing order of seniority A, B, C, D and E) who found 100 gold coins. They must decide how to distribute them.
+            <br>
+            The pirate world's rules of distribution say that the most senior pirate first proposes a plan of distribution. The pirates, including the proposer, then vote on whether to accept this distribution. 
+            <br>
+            If the majority accepts the plan, the coins are disbursed and the game ends. In case of a tie vote, the proposer has the casting vote. 
+            <br>
+            If the majority rejects the plan, the proposer is thrown overboard from the pirate ship and dies, and the next most senior pirate makes a new proposal to begin the system again. 
+            <br>
+            The process repeats until a plan is accepted or if there is one pirate left.
+            <br>
+            Pirates base their decisions on four factors:
+            <br>
+        </p>
+    
+        <ol>    
+            <li>Each pirate wants to survive.</li>
+            <li>Given survival, each pirate wants to maximize the number of gold coins he receives.</li>
+            <li>Each pirate would prefer to throw another overboard, if all other results would otherwise be equal.</li>
+            <li>pirates do not trust each other, and will neither make nor honor any promises between pirates apart from a proposed distribution plan that gives a whole number of gold coins to each pirate.</li>
+        </ol>
+    </div>
+    
+
+    <div class="solution">
+
+        <p>
+            For this problem, we need to discuss step by step
+        </p>
+
+        <h3>
+            1 Pirate
+            <h4>
+                In this case, the only pirate will take all 100 coins!
+                <br>
+                However, in order to show the whole process, please look at the form below: 
+            </h4>
+
+        </h3>
+
+        <table>
+
+            <thead>
+                <th>Name</th>
+                <th>A</th>
+                <th>Total</th>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Coins</td>
+                    <td>100</td>
+                    <td>100</td>
+                </tr>
+
+                <tr>
+                    <td>Previous</td>
+                    <td></td>
+                    <td>100</td>
+                </tr>
+
+                <tr>
+                    <td>Vote</td>
+                    <td>Yes</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p>
+            Number of Pirates = 1
+            <br>
+            Votes needed = 1
+            <br>
+            Votes get = 1
+            <br>
+            <strong>Accepted!</strong>
+        </p>
+
+        <h3>
+            2 Pirates
+            <h4>
+                Now we have Pirate <strong>A</strong> and Pirate <strong>B</strong> 
+                <br>
+                <strong>A</strong> is now giving his plan. 
+                
+            </h4>
+        </h3>
+        <table>
+
+            <thead>
+                <th>Name</th>
+                <th>A</th>
+                <th>B</th>
+                <th>Total</th>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Coins</td>
+                    <td>100</td>
+                    <td>0</td>
+                    <td>100</td>
+                </tr>
+
+                <tr>
+                    <td>Previous</td>
+                    <td></td>
+                    <td>100</td>
+                    <td>100</td>
+                </tr>
+
+                <tr>
+                    <td>Vote</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p>
+            Number of Pirates = 2
+            <br>
+            Votes needed = 1
+            <br>
+            Votes get = 1
+            <br>
+            <strong>Accepted!</strong>
+        </p>
+
+        <div id = "3 Pirates">
+        <h3>
+            3 Pirates
+            <h4>
+                Now we have Pirate <strong>A</strong>, Pirate<strong> B</strong> and Pirate<strong> C</strong> 
+                <br>
+                <strong>A</strong> is now giving his plan. 
+                
+            </h4>
+        </h3>
+        <table>
+
+            <thead>
+                <th>Name</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>Total</th>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Coins</td>
+                    <td>99</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>100</td>
+                </tr>
+
+                <tr>
+                    <td>Previous</td>
+                    <td></td>
+                    <td>100</td>
+                    <td>0</td>
+                    <td>100</td>
+                </tr>
+
+                <tr>
+                    <td>Vote</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p>
+            Number of Pirates = 3
+            <br>
+            Votes needed = 2
+            <br>
+            Votes get = 2
+            <br>
+            <strong>Accepted!</strong>
+        </p>
+
+        </div>
+
+
+
+
+        <div id = "4 Pirates">
+            <h3>
+                4 Pirates
+                <h4>
+                    Now we have Pirate <strong>A</strong>, Pirate<strong> B</strong>, Pirate<strong> C</strong> and Pirate<strong> D</strong> 
+                    <br>
+                    <strong>A</strong> is now giving his plan. 
+                    
+                </h4>
+            </h3>
+            <table>
+    
+                <thead>
+                    <th>Name</th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>Total</th>
+                </thead>
+    
+                <tbody>
+    
+                    <tr>
+                        <td>Coins</td>
+                        <td>99</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>100</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Previous</td>
+                        <td></td>
+                        <td>99</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>100</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Vote</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>2</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            <p>
+                Number of Pirates = 4
+
+                Votes needed = 2
+       
+                Votes get = 2
+     
+                <strong>Accepted!</strong>
+            </p>
+    
+        </div>
+        
+        <div id = "5 Pirates">
+            <h3>
+                5 Pirates
+                <h4>
+                    Now we have Pirate<strong> A</strong>, Pirate<strong> B</strong>, Pirate<strong> C</strong>, Pirate<strong> D</strong> and Pirate <strong>E</strong> 
+                    <br>
+                    <strong>A</strong> is now giving his plan. 
+                    
+                </h4>
+            </h3>
+            <table>
+    
+                <thead>
+                    <th>Name</th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>E</th>
+                    <th>Total</th>
+                </thead>
+    
+                <tbody>
+    
+                    <tr>
+                        <td>Coins</td>
+                        <td>98</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>100</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Previous</td>
+                        <td></td>
+                        <td>99</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>100</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Vote</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>3</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            <p>
+                Number of Pirates = 5
+
+                Votes needed = 3
+       
+                Votes get = 3
+     
+                <strong>Accepted!</strong>
+            </p>
+    </div>
+
+
+
+    <div id="explanation">
+        <p>
+            In this process, we can find out that when the number of pirates increases, all of the even-coded pirate would either have 1 coin or 0, and the odd-coded pirate have the opposite amount of coins. 
+            <br>
+            This process is used to save the proposer's life. 
+            <br>
+            After that, proposer would have the rest of coins! 
+        </p>
+
+        <p>
+            That is the solution of the original problem. 
+            <br>
+            However, if we have more than 200 pirates, what will happen?
+        </p>
+
+
+    </div>
+
+    
+    <div id="more pirates">
+        <button class="button" onclick="window.location.href='more.html';">More pirates are coming!</button>
+    </div>
+
+</body>
+</html>
